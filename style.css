@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  background-color: #000;
+
+  font-family: 'Share Tech Mono', monospace;
+
+  color: #00ff44;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 100vh;
+
+  user-select: none;
+
+}
+
+.terminal {
+
+  text-align: center;
+
+  width: 90%;
+
+  max-width: 500px;
+
+  padding: 20px;
+
+  background: #0a0a0a;
+
+  border: 2px solid #00ff44;
+
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.4);
+
+}
+
+h1 {
+
+  margin-bottom: 20px;
+
+  letter-spacing: 1.5px;
+
+  text-shadow: 0 0 10px #0f0;
+
+  animation: flicker 2s infinite alternate;
+
+}
+
+input {
+
+  background: black;
+
+  color: #00ff44;
+
+  border: 1px solid #00ff44;
+
+  padding: 12px;
+
+  width: 100%;
+
+  font-size: 16px;
+
+  margin-bottom: 15px;
+
+}
+
+button {
+
+  background-color: #00ff44;
+
+  color: black;
+
+  border: none;
+
+  padding: 10px 20px;
+
+  margin: 5px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  letter-spacing: 2px;
+
+  box-shadow: 0 0 10px #00ff44;
+
+  transition: background 0.2s ease;
+
+}
+
+button:hover {
+
+  background-color: #00cc33;
+
+}
+
+#flashScreen {
+
+  margin-top: 20px;
+
+  width: 100%;
+
+  height: 80px;
+
+  background: black;
+
+  border: 2px dashed #00ff44;
+
+  transition: background 0.1s;
+
+}
+
+@keyframes flicker {
+
+  0% { opacity: 1; }
+
+  50% { opacity: 0.85; }
+
+  100% { opacity: 1; }
+
+}
